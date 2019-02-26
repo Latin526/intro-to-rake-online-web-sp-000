@@ -9,11 +9,3 @@ desc 'outputs hola to the terminal'
     puts "hola de Rake!"
   end
 end
-
-namespace :db do
-  decs 'migrate changes to your database'
-  task :migrate =>
-  :enviroment do 
-    Student.create_table
-  end
-end
